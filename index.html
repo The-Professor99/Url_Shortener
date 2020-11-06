@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Start New</title>
+    <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/reset.css"> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="js/index.js" defer></script>
+</head>
+<body>
+    <div class="container main-container1">
+        <nav class="navbar navbar-expand-lg navbar-light mt-3">
+            <a class="navbar-brand" href="#"><img src="images/logo.svg" alt="Logo"></a>
+            <button class="navbar-toggler border-0" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse rounded text-center pt-4" id="collapsibleNavbar">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" href="#features">Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#company">Resources</a>
+                </li>    
+              </ul>
+              <div class="dropdown-divider"></div>
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item"><a href="#" class="nav-link">Login</a></li>
+                  <li class="nav-item"><a href="#" class="nav-link btn btn-lg">Sign Up</a></li>
+              </ul>
+            </div>  
+        </nav>
+    </div>
+        
+    <main>
+        <div class="container container-1">
+            <div class="row">
+                <div class="image1-container col-lg-5 order-lg-2">
+                    <img alt="A woman typing into a computer" src="images/illustration-working.svg" class="img-responsive img-fluid"/>
+                </div>
+                <article class="jumbotron col-lg-7 order-lg-1">
+                    <h3 class="">More than just shorter links</h3>
+                    <p class="lead">Build your brand’s recognition and get detailed insights on how your links are performing.</p>
+                    <a class="btn btn-lg lead" href="#" role="button">Get Started</a>
+                </article>
+            </div>
+        </div>
+        <div class="container-fluid container-2">
+            <form class="row rounded container" id="url-form">
+                <div class="form-group col-md-9">
+                    <label for="formGroupExampleInput">Input Link to be shortened</label>
+                    <input class="form-control" id="formGroupExampleInput" placeholder="Shorten a link here" title="Enter a url - eg. - 'https://www.example.com/page'" pattern="(http(s|):\/\/|www.)(www\.|)[\w]+\.([\w]{2,4})(\/.*|)">
+                    <p id="validateMessage">Please add a link</p>
+                </div>
+                <div class="form-group col-md-3">
+                    <input type="submit" value="Shorten It!" id="shorten" class="btn btn-block" formnovalidate>
+                </div>
+            </form>
+            <!-- LOADER -->
+            <div id="loading" class="hide row">
+                <img src="images/loading.gif" alt="loading gif" class="img-responsive img-fluid m-auto">
+            </div>
+            <section class="cards-container">
+                <div class="card border-0">
+                    <article class="card-block advanced">
+                        <h2 class="card-title">Advanced Statistics</h2>
+
+                        <p class="card-text">Track how your links are performing across the web with our 
+                        advanced statistics dashboard.</p>
+                    </article>
+                </div>
+                <div class="card-group container">
+                    <article class="card">
+                        <div class="card-image-container">
+                            <img class="card-img-top" src="images/icon-brand-recognition.svg" alt="Card image cap">
+                        </div>
+                        <div class="card-block">
+                            <h3 class="card-title">Brand Recognition</h3>
+                            <p class="card-text">
+                                Boost your brand recognition with each click. Generic links don’t mean a thing. Branded links help instil confidence in your content.
+                            </p>
+                        </div>
+                    </article>
+                    <div class="style-me"></div>
+                    <article class="card">
+                        <div class="card-image-container">
+                            <img class="card-img-top" src="images/icon-detailed-records.svg" alt="Card image cap">
+                        </div>
+                        <div class="card-block">
+                            <h3 class="card-title">Detailed Records</h3>
+                            <p class="card-text">
+                                Gain insights into who is clicking your links. Knowing when and where people engage with your content helps inform better decisions.
+                            </p>
+                        </div>
+                    </article>
+                    <div class="style-me"></div>
+                    <article class="card">
+                        <div class="card-image-container">
+                            <img class="card-img-top" src="images/icon-fully-customizable.svg" alt="Card image cap">
+                        </div>
+                        <div class="card-block">
+                            <h3 class="card-title">Fully Customizable</h3>
+                            <p class="card-text">
+                                Improve brand awareness and content discoverability through customizable links, supercharging audience engagement.
+                            </p>
+                        </div>
+                    </article>
+                </div>
+            </section>
+        </div>
+        <div class="card last-card">
+            <div class="card-block">
+                <h1 class="card-title">Boost your links today</h1>
+
+                <button type="button" class="btn btn-lg">Get Started</button>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="container-fluid">
+            <div class="row main-row">
+                <div class="col-lg-2 image-container">
+                    <img src="images/white_logo.svg" alt="Logo" />
+                </div>
+                <div class="col-lg-7 row secondary-row">
+                    <div class="stack col-sm-4" id="features">
+                        <h3>Features</h3>
+                        <ul>
+                            <li><a href="#">Link Shortening</a></li>
+                            <li><a href="#">Branded Links</a></li>
+                            <li><a href="#">Analytics</a></li>
+                        </ul>
+                    </div>
+                    <div class="stack col-sm-4" id="resources">
+                        <h3>Resources</h3>
+                        <ul>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Developers</a></li>
+                            <li><a href="#">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="stack col-sm-4" id="company">
+                        <h3>Company</h3>
+                        <ul>
+                            <li><a href="#">About</a></li>
+                            <li><a href="#">Our Team</a></li>
+                            <li><a href="#">Careers</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <ul class="icon-container col-lg-3 stack">
+                    <li class="d-inline-block"><a href="https://www.linkedin.com/in/ihechi-festus-5b5121190/"><img src="images/icon-facebook.svg" alt="Facebook icon" title="This link actually leads to my LinkedIn account"></a></li>
+                    <li class="d-inline-block"><a href="https://twitter.com/FestusIhechi"><img src="images/icon-twitter.svg" alt="Twitter Icon"></a></li>
+                    <li class="d-inline-block"><a href="#"><img src="images/icon-pinterest.svg" alt="Pinterest Icon"></a></li>
+                    <li class="d-inline-block"><a href="#"><img src="images/icon-instagram.svg" alt="Instagram Icon"></a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="attribution text-center text-white">
+            Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+            Coded by <a href="https://github.com/upcomin">The Professor</a>.
+        </div>
+    </footer>
+</body>
+</html>
